@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francisco IA — Automatizaciones Inteligentes para tu Negocio</title>
+    <meta name="description"
+        content="Francisco IA: Automatizaciones que van a mejorar tu vida financiera en tu negocio. Agentes IA, Landing Pages, Páginas Web y más.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Particles Background -->
+    <div id="particles-container" class="particles-container"></div>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" width="40" height="40">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#06B6D4" />
+                            <stop offset="100%" style="stop-color:#67E8F9" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="20" cy="20" r="18" fill="none" stroke="url(#logoGrad)" stroke-width="2" />
+                    <text x="20" y="27" text-anchor="middle" fill="url(#logoGrad)" font-family="Plus Jakarta Sans"
+                        font-weight="800" font-size="20">F</text>
+                </svg>
+                <span class="logo-text">Francisco <span class="text-primary">IA</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#contacto" class="nav-link btn-primary nav-cta">Contáctame</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ====== HERO SECTION ====== -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg-gradient"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-label animate-on-load" style="--delay:0s">
+                    <span class="label-dot"></span>
+                    🤖 Automatización & Inteligencia Artificial
+                </div>
+                <h1 class="hero-title animate-on-load" style="--delay:0.15s">
+                    Transforma tu negocio con <span class="text-gradient">Francisco IA</span>
+                </h1>
+                <p class="hero-subtitle animate-on-load" style="--delay:0.3s">
+                    Automatizaciones que van a mejorar tu vida financiera en tu negocio. Creamos agentes IA, landing
+                    pages y páginas web de alto impacto.
+                </p>
+                <div class="hero-ctas animate-on-load" style="--delay:0.45s">
+                    <a href="#contacto" class="btn-primary btn-lg pulse-glow">
+                        <span>Empezar Ahora</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="#servicios" class="btn-outline btn-lg">
+                        <span>Ver Servicios</span>
+                    </a>
+                </div>
+                <div class="hero-stats animate-on-load" style="--delay:0.6s">
+                    <div class="stat"><span class="stat-number" data-target="150">0</span><span
+                            class="stat-plus">+</span><span class="stat-label">Proyectos</span></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><span class="stat-number" data-target="98">0</span><span
+                            class="stat-plus">%</span><span class="stat-label">Satisfacción</span></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><span class="stat-number" data-target="50">0</span><span
+                            class="stat-plus">+</span><span class="stat-label">Clientes</span></div>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-load" style="--delay:0.3s">
+                <div class="sphere">
+                    <div class="sphere-inner"></div>
+                    <div class="sphere-ring ring-1"></div>
+                    <div class="sphere-ring ring-2"></div>
+                    <div class="sphere-ring ring-3"></div>
+                    <div class="sphere-orbit-dot dot-1"></div>
+                    <div class="sphere-orbit-dot dot-2"></div>
+                    <div class="sphere-orbit-dot dot-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Desliza hacia abajo</span>
+        </div>
+    </section>
+
+    <!-- ====== SOCIAL PROOF / TECH STACK ====== -->
+    <section class="social-proof">
+        <div class="container">
+            <p class="social-proof-text">Tecnologías y herramientas que domino</p>
+            <div class="logos-marquee">
+                <div class="logos-track">
+                    <div class="tech-logo">Python</div>
+                    <div class="tech-logo">OpenAI</div>
+                    <div class="tech-logo">LangChain</div>
+                    <div class="tech-logo">React</div>
+                    <div class="tech-logo">Node.js</div>
+                    <div class="tech-logo">Next.js</div>
+                    <div class="tech-logo">Make</div>
+                    <div class="tech-logo">Zapier</div>
+                    <div class="tech-logo">n8n</div>
+                    <div class="tech-logo">Claude AI</div>
+                    <div class="tech-logo">Python</div>
+                    <div class="tech-logo">OpenAI</div>
+                    <div class="tech-logo">LangChain</div>
+                    <div class="tech-logo">React</div>
+                    <div class="tech-logo">Node.js</div>
+                    <div class="tech-logo">Next.js</div>
+                    <div class="tech-logo">Make</div>
+                    <div class="tech-logo">Zapier</div>
+                    <div class="tech-logo">n8n</div>
+                    <div class="tech-logo">Claude AI</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SERVICIOS ====== -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">💡 Lo Que Hago</span>
+                <h2 class="section-title">Servicios que <span class="text-gradient">Impulsan</span> tu Negocio</h2>
+                <p class="section-subtitle">Soluciones tecnológicas personalizadas que automatizan, optimizan y escalan
+                    tu operación.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card-flip reveal" style="--stagger:0">
+                    <div class="service-card-inner">
+                        <div class="service-card-front glass-card">
+                            <div class="service-icon-wrap">
+                                <svg viewBox="0 0 48 48" class="service-svg">
+                                    <rect x="6" y="8" width="36" height="28" rx="3" fill="none" stroke="#06B6D4"
+                                        stroke-width="2" />
+                                    <line x1="6" y1="14" x2="42" y2="14" stroke="#06B6D4" stroke-width="2" />
+                                    <circle cx="10" cy="11" r="1.5" fill="#EF4444" />
+                                    <circle cx="15" cy="11" r="1.5" fill="#F59E0B" />
+                                    <circle cx="20" cy="11" r="1.5" fill="#22C55E" />
+                                    <rect x="10" y="18" width="14" height="2" rx="1" fill="#06B6D4" opacity="0.6" />
+                                    <rect x="10" y="23" width="20" height="2" rx="1" fill="#06B6D4" opacity="0.4" />
+                                    <rect x="10" y="28" width="10" height="2" rx="1" fill="#06B6D4" opacity="0.3" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title-front">Páginas Web</h3>
+                            <p class="service-preview">Sitios web modernos y funcionales</p>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Páginas Web</h3>
+                            <p class="service-description">Desarrollo de sitios web premium con diseño moderno,
+                                optimizados para conversión y rendimiento. Cada proyecto es responsive y SEO-friendly.
+                            </p>
+                            <div class="service-features"><span class="feature-tag">React</span><span
+                                    class="feature-tag">Next.js</span><span class="feature-tag">SEO</span><span
+                                    class="feature-tag">Responsive</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card-flip reveal" style="--stagger:1">
+                    <div class="service-card-inner">
+                        <div class="service-card-front glass-card">
+                            <div class="service-icon-wrap">
+                                <svg viewBox="0 0 48 48" class="service-svg">
+                                    <path d="M8 38 L24 10 L40 38 Z" fill="none" stroke="#06B6D4" stroke-width="2" />
+                                    <circle cx="24" cy="28" r="5" fill="none" stroke="#67E8F9" stroke-width="2" />
+                                    <line x1="24" y1="23" x2="24" y2="18" stroke="#67E8F9" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title-front">Landing Pages</h3>
+                            <p class="service-preview">Páginas de conversión de alto impacto</p>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Landing Pages</h3>
+                            <p class="service-description">Landing pages diseñadas para convertir visitantes en
+                                clientes. Copys persuasivos, diseño premium y optimización de velocidad.</p>
+                            <div class="service-features"><span class="feature-tag">CRO</span><span
+                                    class="feature-tag">A/B Testing</span><span
+                                    class="feature-tag">Analytics</span><span class="feature-tag">Copywriting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card-flip reveal" style="--stagger:2">
+                    <div class="service-card-inner">
+                        <div class="service-card-front glass-card">
+                            <div class="service-icon-wrap">
+                                <svg viewBox="0 0 48 48" class="service-svg">
+                                    <circle cx="24" cy="20" r="8" fill="none" stroke="#06B6D4" stroke-width="2" />
+                                    <path d="M16 20 Q16 12 24 12 Q32 12 32 20" fill="none" stroke="#67E8F9"
+                                        stroke-width="1.5" />
+                                    <line x1="24" y1="28" x2="24" y2="38" stroke="#06B6D4" stroke-width="2" />
+                                    <circle cx="18" cy="36" r="3" fill="none" stroke="#67E8F9" stroke-width="1.5" />
+                                    <circle cx="30" cy="36" r="3" fill="none" stroke="#67E8F9" stroke-width="1.5" />
+                                    <line x1="24" y1="33" x2="18" y2="36" stroke="#06B6D4" stroke-width="1.5" />
+                                    <line x1="24" y1="33" x2="30" y2="36" stroke="#06B6D4" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title-front">Agentes IA</h3>
+                            <p class="service-preview">Asistentes inteligentes 24/7</p>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Agentes IA</h3>
+                            <p class="service-description">Agentes de inteligencia artificial que trabajan por ti las 24
+                                horas. Atienden clientes, procesan datos y toman decisiones inteligentes.</p>
+                            <div class="service-features"><span class="feature-tag">GPT</span><span
+                                    class="feature-tag">LangChain</span><span class="feature-tag">NLP</span><span
+                                    class="feature-tag">Chatbots</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card-flip reveal" style="--stagger:3">
+                    <div class="service-card-inner">
+                        <div class="service-card-front glass-card">
+                            <div class="service-icon-wrap">
+                                <svg viewBox="0 0 48 48" class="service-svg">
+                                    <circle cx="16" cy="16" r="5" fill="none" stroke="#06B6D4" stroke-width="2" />
+                                    <circle cx="32" cy="16" r="5" fill="none" stroke="#67E8F9" stroke-width="2" />
+                                    <circle cx="16" cy="32" r="5" fill="none" stroke="#67E8F9" stroke-width="2" />
+                                    <circle cx="32" cy="32" r="5" fill="none" stroke="#06B6D4" stroke-width="2" />
+                                    <line x1="21" y1="16" x2="27" y2="16" stroke="#06B6D4" stroke-width="1.5" />
+                                    <line x1="16" y1="21" x2="16" y2="27" stroke="#06B6D4" stroke-width="1.5" />
+                                    <line x1="32" y1="21" x2="32" y2="27" stroke="#67E8F9" stroke-width="1.5" />
+                                    <line x1="21" y1="32" x2="27" y2="32" stroke="#67E8F9" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title-front">Automatizaciones</h3>
+                            <p class="service-preview">Flujos de trabajo automáticos</p>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Automatizaciones</h3>
+                            <p class="service-description">Automatización de procesos repetitivos para que inviertas tu
+                                tiempo en lo que realmente importa. Conectamos todas tus herramientas.</p>
+                            <div class="service-features"><span class="feature-tag">Make</span><span
+                                    class="feature-tag">Zapier</span><span class="feature-tag">n8n</span><span
+                                    class="feature-tag">APIs</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card-flip reveal" style="--stagger:4">
+                    <div class="service-card-inner">
+                        <div class="service-card-front glass-card">
+                            <div class="service-icon-wrap">
+                                <svg viewBox="0 0 48 48" class="service-svg">
+                                    <polyline points="8,36 16,24 24,30 32,16 40,20" fill="none" stroke="#06B6D4"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <circle cx="40" cy="20" r="3" fill="#22C55E" />
+                                    <rect x="8" y="8" width="32" height="32" rx="4" fill="none" stroke="#67E8F9"
+                                        stroke-width="1.5" opacity="0.4" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title-front">Analytics IA Financiero</h3>
+                            <p class="service-preview">Datos que impulsan tu crecimiento</p>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Analytics IA Financiero</h3>
+                            <p class="service-description">Análisis financiero inteligente que te muestra oportunidades
+                                de ahorro y crecimiento. Dashboards en tiempo real con predicciones basadas en IA.</p>
+                            <div class="service-features"><span class="feature-tag">Python</span><span
+                                    class="feature-tag">Dashboards</span><span class="feature-tag">KPIs</span><span
+                                    class="feature-tag">Predicciones</span></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card-flip reveal" style="--stagger:5">
+                    <div class="service-card-inner">
+                        <div class="service-card-front glass-card">
+                            <div class="service-icon-wrap">
+                                <svg viewBox="0 0 48 48" class="service-svg">
+                                    <path d="M24 8 L24 16 M24 32 L24 40 M8 24 L16 24 M32 24 L40 24" stroke="#06B6D4"
+                                        stroke-width="2" stroke-linecap="round" />
+                                    <circle cx="24" cy="24" r="8" fill="none" stroke="#67E8F9" stroke-width="2" />
+                                    <circle cx="24" cy="24" r="3" fill="#06B6D4" />
+                                    <path d="M14 14 L18 18 M30 30 L34 34 M14 34 L18 30 M30 18 L34 14" stroke="#67E8F9"
+                                        stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title-front">Consultoría Digital</h3>
+                            <p class="service-preview">Estrategia de transformación digital</p>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <h3 class="service-title-back">Consultoría Digital</h3>
+                            <p class="service-description">Te acompaño en el proceso de transformación digital de tu
+                                negocio. Identificamos oportunidades de mejora e implementamos soluciones con IA.</p>
+                            <div class="service-features"><span class="feature-tag">Estrategia</span><span
+                                    class="feature-tag">Roadmap</span><span class="feature-tag">ROI</span><span
+                                    class="feature-tag">Mentoring</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PORTFOLIO / SHOWCASE ====== -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">🚀 Mi Trabajo</span>
+                <h2 class="section-title">Proyectos <span class="text-gradient">Destacados</span></h2>
+                <p class="section-subtitle">Algunos de los proyectos donde la automatización y la IA generaron
+                    resultados reales.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card glass-card reveal" style="--stagger:0">
+                    <div class="portfolio-visual pv-1">
+                        <div class="portfolio-mockup">
+                            <div class="mockup-bar"><span></span><span></span><span></span></div>
+                            <div class="mockup-content">
+                                <div class="mc-line w70"></div>
+                                <div class="mc-line w50"></div>
+                                <div class="mc-block"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info"><span class="portfolio-tag">Agente IA</span>
+                        <h3>Chatbot IA para E-commerce</h3>
+                        <p>Agente inteligente que aumentó las ventas un 40% automatizando la atención al cliente con
+                            respuestas personalizadas 24/7.</p>
+                        <div class="portfolio-metrics">
+                            <div class="pm"><span class="pm-val text-primary">+40%</span><span
+                                    class="pm-label">Ventas</span></div>
+                            <div class="pm"><span class="pm-val text-primary">-60%</span><span class="pm-label">Tiempo
+                                    respuesta</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card glass-card reveal" style="--stagger:1">
+                    <div class="portfolio-visual pv-2">
+                        <div class="portfolio-mockup">
+                            <div class="mockup-bar"><span></span><span></span><span></span></div>
+                            <div class="mockup-content">
+                                <div class="mc-line w40"></div>
+                                <div class="mc-grid">
+                                    <div class="mc-card"></div>
+                                    <div class="mc-card"></div>
+                                    <div class="mc-card"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info"><span class="portfolio-tag">Landing Page</span>
+                        <h3>Landing de Conversión SaaS</h3>
+                        <p>Landing page premium que alcanzó una tasa de conversión del 12%, triplicando los leads
+                            cualificados del cliente.</p>
+                        <div class="portfolio-metrics">
+                            <div class="pm"><span class="pm-val text-primary">12%</span><span
+                                    class="pm-label">Conversión</span></div>
+                            <div class="pm"><span class="pm-val text-primary">3x</span><span
+                                    class="pm-label">Leads</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-card glass-card reveal" style="--stagger:2">
+                    <div class="portfolio-visual pv-3">
+                        <div class="portfolio-mockup">
+                            <div class="mockup-bar"><span></span><span></span><span></span></div>
+                            <div class="mockup-content">
+                                <div class="mc-line w60"></div>
+                                <div class="mc-chart">
+                                    <div class="chart-bar" style="--h:40%"></div>
+                                    <div class="chart-bar" style="--h:65%"></div>
+                                    <div class="chart-bar" style="--h:50%"></div>
+                                    <div class="chart-bar" style="--h:85%"></div>
+                                    <div class="chart-bar" style="--h:70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info"><span class="portfolio-tag">Automatización</span>
+                        <h3>Sistema de Automatización Financiera</h3>
+                        <p>Automatización completa del flujo financiero que ahorró 120+ horas mensuales en procesos
+                            manuales.</p>
+                        <div class="portfolio-metrics">
+                            <div class="pm"><span class="pm-val text-primary">120h</span><span
+                                    class="pm-label">Ahorro/mes</span></div>
+                            <div class="pm"><span class="pm-val text-primary">-85%</span><span
+                                    class="pm-label">Errores</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== TESTIMONIOS ====== -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">⭐ Testimonios</span>
+                <h2 class="section-title">Lo Que Dicen Mis <span class="text-gradient">Clientes</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card reveal" style="--stagger:0">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Francisco transformó completamente nuestro proceso de ventas con un
+                        agente IA que atiende clientes las 24 horas. Nuestros ingresos se duplicaron en 3 meses.</p>
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div><strong>María Rodríguez</strong><span>CEO, TechSolutions</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card reveal" style="--stagger:1">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">La landing page que creó para nosotros tiene un diseño increíble.
+                        Pasamos de 2% a 12% de conversión. El ROI fue inmediato. 100% recomendado.</p>
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CL</div>
+                        <div><strong>Carlos López</strong><span>Founder, GrowthApp</span></div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card reveal" style="--stagger:2">
+                    <div class="quote-mark">"</div>
+                    <p class="testimonial-text">Las automatizaciones que implementó nos ahorraron más de 120 horas al
+                        mes en tareas repetitivas. Ahora mi equipo se enfoca en lo estratégico.</p>
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AL</div>
+                        <div><strong>Ana Martínez</strong><span>COO, FinanceHub</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SOBRE MÍ ====== -->
+    <section class="about" id="sobre-mi">
+        <div class="container">
+            <div class="about-grid reveal">
+                <div class="about-visual">
+                    <div class="about-avatar-wrap">
+                        <div class="about-avatar">
+                            <svg viewBox="0 0 120 120" width="120" height="120">
+                                <defs>
+                                    <linearGradient id="avGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#06B6D4" />
+                                        <stop offset="100%" style="stop-color:#67E8F9" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="60" cy="60" r="56" fill="none" stroke="url(#avGrad)" stroke-width="3" />
+                                <text x="60" y="72" text-anchor="middle" fill="url(#avGrad)"
+                                    font-family="Plus Jakarta Sans" font-weight="800" font-size="42">F</text>
+                            </svg>
+                        </div>
+                        <div class="about-glow"></div>
+                    </div>
+                    <div class="about-socials">
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link" aria-label="GitHub">gh</a>
+                        <a href="#" class="social-link" aria-label="Twitter">x</a>
+                        <a href="#" class="social-link" aria-label="Instagram">ig</a>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-label">🧑‍💻 Sobre Mí</span>
+                    <h2 class="section-title">Hola, soy <span class="text-gradient">Francisco</span></h2>
+                    <p>Soy un apasionado de la inteligencia artificial y la automatización de negocios. Mi misión es
+                        ayudar a emprendedores y empresas a escalar sus operaciones usando tecnología de vanguardia.</p>
+                    <p>Combino desarrollo web de alta calidad con soluciones de IA avanzada para crear sistemas que
+                        trabajan por ti las 24 horas del día, los 7 días de la semana. Cada proyecto es único y está
+                        diseñado para generar resultados reales.</p>
+                    <p>Cuando no estoy programando, estoy investigando las últimas novedades en inteligencia artificial
+                        para traer las mejores soluciones a mis clientes.</p>
+                    <div class="about-badges">
+                        <span class="badge glass-card">🤖 IA & ML</span>
+                        <span class="badge glass-card">⚡ Automatización</span>
+                        <span class="badge glass-card">🌐 Web Dev</span>
+                        <span class="badge glass-card">📊 Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CTA FINAL / CONTACT FORM ====== -->
+    <section class="cta-section" id="contacto">
+        <div class="cta-bg-glow"></div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2 class="cta-title">¿Listo para <span class="text-gradient">Automatizar</span> tu Negocio?</h2>
+                <p class="cta-subtitle">Completa el formulario y agenda tu consulta gratuita. Te responderé en menos de
+                    24 horas.</p>
+
+                <!-- Contact Form -->
+                <form id="contactForm" class="contact-form glass-card">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo <span class="required">*</span></label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono / WhatsApp</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+54 11 1234-5678">
+                        </div>
+                        <div class="form-group">
+                            <label for="negocio">Nombre del Negocio</label>
+                            <input type="text" id="negocio" name="negocio" placeholder="Tu empresa o marca">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="servicio">¿Qué servicio te interesa? <span class="required">*</span></label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="" disabled selected>Selecciona un servicio</option>
+                                <option value="Páginas Web">🌐 Páginas Web</option>
+                                <option value="Landing Pages">🎯 Landing Pages</option>
+                                <option value="Agentes IA">🤖 Agentes IA</option>
+                                <option value="Automatizaciones">⚡ Automatizaciones</option>
+                                <option value="Analytics IA Financiero">📊 Analytics IA Financiero</option>
+                                <option value="Consultoría Digital">💡 Consultoría Digital</option>
+                                <option value="Otro">🔧 Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="presupuesto">Presupuesto Estimado</label>
+                            <select id="presupuesto" name="presupuesto">
+                                <option value="" disabled selected>Selecciona un rango</option>
+                                <option value="Menos de $500 USD">Menos de $500 USD</option>
+                                <option value="$500 - $1,000 USD">$500 - $1,000 USD</option>
+                                <option value="$1,000 - $3,000 USD">$1,000 - $3,000 USD</option>
+                                <option value="$3,000 - $5,000 USD">$3,000 - $5,000 USD</option>
+                                <option value="Más de $5,000 USD">Más de $5,000 USD</option>
+                                <option value="Por definir">Por definir</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="mensaje">Cuéntame sobre tu proyecto <span class="required">*</span></label>
+                            <textarea id="mensaje" name="mensaje" rows="4"
+                                placeholder="Describe brevemente qué necesitas, tus objetivos y cualquier detalle importante..."
+                                required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" id="submitBtn" class="btn-primary btn-xl pulse-glow form-submit-btn">
+                        <span id="btnText">Enviar Consulta Gratis</span>
+                        <svg id="btnArrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                        <div id="btnSpinner" class="spinner" style="display:none;"></div>
+                    </button>
+                    <p class="cta-note">✓ Sin compromiso · ✓ Respuesta en 24h · ✓ 100% personalizado</p>
+                </form>
+
+                <!-- Success Message (hidden by default) -->
+                <div id="formSuccess" class="form-success" style="display:none;">
+                    <div class="success-icon">✅</div>
+                    <h3>¡Consulta Enviada con Éxito!</h3>
+                    <p>Gracias por contactarnos. Te responderemos en menos de 24 horas a tu correo electrónico.</p>
+                    <button
+                        onclick="document.getElementById('formSuccess').style.display='none'; document.getElementById('contactForm').style.display='block'; document.getElementById('contactForm').reset();"
+                        class="btn-outline">Enviar otra consulta</button>
+                </div>
+
+                <!-- Error Message (hidden by default) -->
+                <div id="formError" class="form-error" style="display:none;">
+                    <div class="error-icon">⚠️</div>
+                    <h3>Error al Enviar</h3>
+                    <p id="errorMsg">Hubo un problema al enviar tu consulta. Por favor intenta de nuevo.</p>
+                    <button
+                        onclick="document.getElementById('formError').style.display='none'; document.getElementById('contactForm').style.display='block';"
+                        class="btn-outline">Intentar de nuevo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" width="40" height="40">
+                            <defs>
+                                <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#06B6D4" />
+                                    <stop offset="100%" style="stop-color:#67E8F9" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="20" cy="20" r="18" fill="none" stroke="url(#logoGrad2)" stroke-width="2" /><text
+                                x="20" y="27" text-anchor="middle" fill="url(#logoGrad2)"
+                                font-family="Plus Jakarta Sans" font-weight="800" font-size="20">F</text>
+                        </svg>
+                        <span class="logo-text">Francisco <span class="text-primary">IA</span></span>
+                    </div>
+                    <p class="footer-desc">Automatizaciones inteligentes que transforman la vida financiera de tu
+                        negocio.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Páginas Web</a></li>
+                        <li><a href="#servicios">Landing Pages</a></li>
+                        <li><a href="#servicios">Agentes IA</a></li>
+                        <li><a href="#servicios">Automatizaciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:francisco@franciscoia.com">Email</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Twitter / X</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Francisco IA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
